@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Research | Tousik Samui</title>
+  <meta name="description" content="Research of Tousik Samui: jets and jet substructure, collider phenomenology, physics beyond the Standard Model, machine learning and research software.">
+  <link rel="icon" href="images/favicon.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <a class="name" href="index.html">Tousik Samui</a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a class="current" href="research.html">Research</a>
+      <a href="pub.html">Publications</a>
+      <a href="activities.html">Teaching &amp; Talks</a>
+      <a href="TousikSamui_CV.pdf">CV</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<div class="wrap">
+
+  <h1>Research</h1>
+  <p class="subtitle">High energy physics phenomenology</p>
+
+  <p>The Standard Model of particle physics works remarkably well, but it does not explain dark matter, neutrino masses, the matter&ndash;antimatter asymmetry of the universe, or the pattern of quark and lepton flavours. My research asks how answers to these questions could show up at high-energy colliders, and how we can see them in real data.</p>
+
+  <p>I work across the whole chain of a collider study: building a model, generating Monte Carlo events, simulating the detector, designing the analysis, and interpreting the result with statistics. When the tools I need do not exist, I write them.</p>
+
+  <h2>Jets and jet substructure</h2>
+  <p>At the LHC, most interesting final states contain jets: sprays of hadrons from quarks and gluons, or from fast-moving heavy particles such as W, Z, Higgs bosons and top quarks. Standard jet algorithms use a fixed jet radius. With collaborators I proposed the <b>Dynamic Radius jet clustering algorithm</b>, in which the radius of each jet follows its own radiation pattern during clustering (<a href="https://doi.org/10.1007/JHEP04(2023)019">JHEP 2023</a>). We have since generalised it for more robust analyses (<a href="https://arxiv.org/abs/2609.29862">arXiv:2609.29862</a>), and used it with public <b>CMS Open Data</b> to improve searches for vector-like top partners (<a href="https://doi.org/10.1103/dhs6-gcn9">Phys. Rev. D 2026</a>).</p>
+  <p>Other substructure studies include quark&ndash;gluon discrimination in heavy dijet resonance searches (<a href="https://doi.org/10.1140/epjc/s10052-021-08856-9">EPJC 2021</a>), the polarisation of boosted W bosons with substructure and multivariate analysis (<a href="https://doi.org/10.1140/epjc/s10052-023-12118-1">EPJC 2023</a>), leptoquark models probed through top polarisation (<a href="https://doi.org/10.1007/JHEP07(2025)145">JHEP 2025</a>), and left- versus right-handed couplings of heavy neutrinos (<a href="https://doi.org/10.1103/PhysRevD.111.075017">PRD 2025</a>).</p>
+
+  <h2>Quantum observables and precision at future colliders</h2>
+  <p>Recent measurements have shown quantum entanglement between particles produced at colliders. I am interested in hadronic decays, which are more common but harder to use. We developed an <b>unfolding</b> method to recover entanglement observables in Higgs decays to jets and leptons at a muon collider (<a href="https://arxiv.org/abs/2512.09121">arXiv:2512.09121</a>). For the FCC-ee, I am working on Higgs production in lepton&ndash;photon collisions, including a Monte Carlo event generator with lepton and photon distribution functions (<a href="https://arxiv.org/abs/2603.27822">arXiv:2603.27822</a>).</p>
+
+  <h2>Physics beyond the Standard Model</h2>
+  <p>In my PhD I studied collider signals of extra dimensions: mixing between the Higgs boson and the radion in warped models (<a href="https://doi.org/10.1016/j.nuclphysb.2017.06.006">NPB 2017</a>), and missing-energy signals of large extra dimensions, for which I wrote a dedicated event generator. Later work covers dark matter (<a href="https://doi.org/10.1103/PhysRevD.100.115050">PRD 2019</a>, <a href="https://doi.org/10.1140/epjc/s10052-024-13407-z">EPJC 2024</a>), a neutrinophilic U(1) model (<a href="https://doi.org/10.1103/PhysRevD.104.095031">PRD 2021</a>), the Type-X two-Higgs-doublet model (<a href="https://doi.org/10.1103/PhysRevD.108.075004">PRD 2023</a>, <a href="https://doi.org/10.1016/j.physletb.2024.138949">PLB 2024</a>), leptoquarks and vector-like leptons (<a href="https://doi.org/10.1103/PhysRevD.107.035028">PRD 2023</a>, <a href="https://doi.org/10.1016/j.nuclphysb.2024.116564">NPB 2024</a>), and lepton flavour violation at electron&ndash;proton colliders (<a href="https://doi.org/10.1016/j.physletb.2025.140048">PLB 2026</a>).</p>
+
+<!--
+  <h2>Current projects</h2>
+  <ul>
+    <li>Diboson production in semi-leptonic channels within the Standard Model Effective Field Theory (SMEFT), as a model-independent probe at the HL-LHC.</li>
+    <li>Better identification of hadronic W and Z bosons with b- and c-tagging and machine learning.</li>
+    <li>Hadronisation of heavy, long-lived coloured particles (such as R-hadrons) in the Lund string model in Pythia8, including colour-sextet states that need a modified colour connection.</li>
+    <li>Automated, reproducible analysis pipelines for collider studies.</li>
+  </ul>
+--!>
+  <h2 id="software">Software</h2>
+  <ul>
+    <li><b>DynamicR</b> (C++): the official implementation of the Dynamic Radius jet algorithm, released in <a href="https://fastjet.fr/contrib/">FastJet Contrib</a> (v1.104 onwards). I wrote and maintain it. <a href="https://github.com/tousiksamui/DynamicRJetAlgorithm">Code on GitHub</a>.</li>
+    <li><b>Dynamic Radius animation</b> (Python): draws each step of the clustering as a video, for talks, teaching and debugging.</li>
+    <li><b>Monte Carlo event generators</b>: for Kaluza&ndash;Klein graviton towers (PhD) and for lepton&ndash;photon initiated processes at the FCC-ee.</li>
+    <li><b>Pythia8 extension</b> (C++, in progress): modified colour connections for heavy, long-lived coloured states.</li>
+    <li><b>HPC cluster dashboards</b> (PHP/HTML): live job-status pages for the HRI cluster and the IISER Kolkata <a href="https://www.iiserkol.ac.in/~dps.hpc/clusterStatus">Kepler cluster</a>.</li>
+  </ul>
+
+</div>
+</main>
+
+<footer class="site">
+  <div class="wrap">Last updated: October 2026</div>
+</footer>
+
+</body>
+</html>
