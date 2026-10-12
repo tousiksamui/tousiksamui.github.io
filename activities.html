@@ -3,9 +3,12 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Teaching and talks | Tousik Samui</title>
+  <title>Talks, teaching and awards | Tousik Samui</title>
   <meta name="description" content="Teaching, talks, service and outreach of Tousik Samui.">
   <link rel="icon" href="images/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400..700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -15,9 +18,10 @@
     <a class="name" href="index.html">Tousik Samui</a>
     <nav>
       <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
       <a href="research.html">Research</a>
       <a href="pub.html">Publications</a>
-      <a class="current" href="activities.html">Teaching &amp; Talks</a>
+      <a class="current" href="activities.html">Talks &amp; Teaching</a>
       <a href="TousikSamui_CV.pdf">CV</a>
     </nav>
   </div>
@@ -26,10 +30,18 @@
 <main>
 <div class="wrap">
 
-  <h1>Teaching &amp; Talks</h1>
-  <p class="subtitle">Teaching, talks, service and outreach</p>
+  <h1>Talks, Teaching &amp; Awards</h1>
+  <p class="subtitle">Teaching, talks, awards, service and outreach</p>
+  <ul class="toc">
+    <li><a class="btn" href="#teaching">Teaching</a></li>
+    <li><a class="btn" href="#talks">Talks</a></li>
+    <li><a class="btn" href="#awards">Awards</a></li>
+    <li><a class="btn" href="#service">Service</a></li>
+    <li><a class="btn" href="#visits">Visits</a></li>
+    <li><a class="btn" href="#conferences">Conferences</a></li>
+  </ul>
 
-  <h2>Teaching</h2>
+  <h2 id="teaching">Teaching</h2>
   <ul class="dated">
     <li><span class="when">May 2025</span>
         <span>Online lectures, <b>Data handling using ROOT</b>, School and Workshop on Statistical Methods and Deep Machine Learning in High Energy Physics and Astrophysics (pre-school), IISER Kolkata. <a href="https://www.iiserkol.ac.in/~ml4hep">School page</a>.</span></li>
@@ -47,7 +59,7 @@
         <span>Teaching assistant, <b>Classical Mechanics</b>, TIFR Mumbai.</span></li>
   </ul>
 
-  <h2>Invited and contributed talks</h2>
+  <h2 id="talks">Invited and contributed talks</h2>
   <!-- HOW TO ADD A TALK: copy one <li> ... </li> line, paste it at the top, and edit it. -->
   <ul class="dated">
     <li><span class="when">28 Apr 2026</span>
@@ -132,12 +144,38 @@
         <span><b>Missing energy in tt&#773; production at e<sup>+</sup>e<sup>&minus;</sup> Collider as a probe of Large Extra Dimensions</b>, contributed talk at XXI DAE-BRNS High Energy Physics Symposium, IIT Guwahati, India.</span></li>
   </ul>
 
-  <h2>Service and outreach</h2>
+  <h2 id="awards">Awards and achievements</h2>
+  <ul class="dated">
+    <li><span class="when">Mar 2023</span>
+        <span><b>Best Poster</b>, DPS Day 2023, Department of Physical Sciences, IISER Kolkata.</span></li>
+    <li><span class="when">Jun 2013</span>
+        <span>All India Rank <b>3</b>, National Eligibility Test (CSIR-UGC NET) in Physical Sciences.</span></li>
+    <li><span class="when">2013</span>
+        <span>All India Rank <b>15</b>, Graduate Aptitude Test in Engineering (GATE) in Mathematics.</span></li>
+    <li><span class="when">2013</span>
+        <span><b>Shyama Prasad Mukherjee Fellowship</b> in Physical Sciences, Council of Scientific and Industrial Research (CSIR), Government of India.</span></li>
+    <li><span class="when">2013</span>
+        <span><b>Junior Research Fellowship</b> in Mathematical Sciences, CSIR, Government of India.</span></li>
+    <li><span class="when">Dec 2012</span>
+        <span>All India Rank <b>43</b>, CSIR-UGC NET in Mathematical Sciences.</span></li>
+    <li><span class="when">2011</span>
+        <span><b>Academic Excellence Award</b>, M.Sc. (2-year) programme in Physics, IIT Kanpur.</span></li>
+    <li><span class="when">2011</span>
+        <span>All India Rank <b>16</b>, Joint Entrance Screening Test (JEST) in Physics.</span></li>
+    <li><span class="when">2011</span>
+        <span>All India Rank <b>23</b>, GATE in Physics.</span></li>
+    <li><span class="when">2010</span>
+        <span>All India Rank <b>5</b>, Joint Admission Test for M.Sc. (JAM) in Physics.</span></li>
+    <li><span class="when">2007&ndash;2012</span>
+        <span><b>INSPIRE Scholarship</b>, Department of Science and Technology (DST), Government of India.</span></li>
+  </ul>
+
+  <h2 id="service">Service and outreach</h2>
   <ul class="dated">
     <li><span class="when">2023&ndash;2025</span>
         <span>Secretary, <a href="https://mode-collaboration.github.io/">MODE collaboration</a> (Machine-learning Optimized Design of Experiments).</span></li>
     <li><span class="when">2023&ndash;2024</span>
-        <span>System administrator and maintenance coordinator of the departmental HPC cluster <i>Kepler</i>, IISER Kolkata (<a href="https://www.iiserkol.ac.in/~dps.hpc/clusterStatus">live status page</a>).</span></li>
+        <span>System administrator and maintenance coordinator of the departmental HPC cluster <i>Kepler</i>, IISER Kolkata (<a href="https://www.iiserkol.ac.in/~dps.hpc/clusterStatus">live status page</a>, <a href="projects.html#kepler">details</a>).</span></li>
     <li><span class="when">2023&ndash;2024</span>
         <span>Organiser, weekly High Energy Physics journal club, IISER Kolkata.</span></li>
     <li><span class="when">2020&ndash;2021</span>
@@ -148,7 +186,7 @@
         <span>Organiser, weekly HEP journal club, HRI Prayagraj.</span></li>
   </ul>
 
-  <h2>Academic visits</h2>
+  <h2 id="visits">Academic visits</h2>
   <ul class="dated">
     <li><span class="when">Feb 2026</span><span>IISER Mohali, India.</span></li>
     <li><span class="when">Aug&ndash;Sep 2025</span><span>IISER Kolkata, India.</span></li>
@@ -160,8 +198,8 @@
     <li><span class="when">Jun 2017</span><span>LPT Orsay (France), Scuola Normale Superiore Pisa (Italy) and LPSC Grenoble (France).</span></li>
   </ul>
 
-  <h2>Schools, conferences and workshops attended</h2>
-  <details>
+  <h2 id="conferences">Schools, conferences and workshops attended</h2>
+  <details class="full">
     <summary>Show the full list</summary>
     <ul class="dated">
     <li><span class="when">Jun&ndash;Jul 2025</span>
@@ -251,7 +289,7 @@
 </main>
 
 <footer class="site">
-  <div class="wrap">Last updated: October 2026</div>
+  <div class="wrap"><span>&copy; Tousik Samui</span><span>Last updated: October 2026</span></div>
 </footer>
 
 </body>

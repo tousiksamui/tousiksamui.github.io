@@ -3,94 +3,341 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Tousik Samui | Particle physicist</title>
-  <meta name="description" content="Tousik Samui, Postdoctoral Fellow at IMSc Chennai. Collider phenomenology, jets and jet substructure, machine learning and research software.">
+  <title>Tousik Samui | Physicist: data, machine learning and scientific computing</title>
+  <meta name="description" content="Tousik Samui, PhD (TIFR). Physicist working with large datasets, statistics, machine learning, C++/Python and HPC. Postdoctoral Fellow at IMSc Chennai.">
   <link rel="icon" href="images/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400..700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- ============ TOP BAR (same on every page) ============ -->
+<!-- ================= TOP BAR (same on every page) ================= -->
 <header class="site">
   <div class="wrap">
     <a class="name" href="index.html">Tousik Samui</a>
     <nav>
       <a class="current" href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
       <a href="research.html">Research</a>
       <a href="pub.html">Publications</a>
-      <a href="activities.html">Teaching &amp; Talks</a>
+      <a href="activities.html">Talks &amp; Teaching</a>
       <a href="TousikSamui_CV.pdf">CV</a>
     </nav>
   </div>
 </header>
 
 <main>
-<div class="wrap">
 
-  <!-- ============ PHOTO + SHORT INTRODUCTION ============ -->
-  <section class="intro">
+<!-- ================= PHOTO + SHORT BIO ================= -->
+<div class="wrap">
+  <section class="hero">
     <img class="photo" src="images/photo.jpg" alt="Photo of Tousik Samui">
     <div>
       <h1>Tousik Samui</h1>
-      <p class="subtitle">Postdoctoral Fellow, The Institute of Mathematical Sciences (IMSc), Chennai, India</p>
+      <div class="role">Physicist (PhD, TIFR) &middot; Data, machine learning and scientific computing &middot; Postdoctoral Fellow, IMSc Chennai</div>
 
-      <p>I am a theoretical particle physicist. I study how new physics, and the Standard Model itself, show up in the data of high-energy colliders: the LHC today, and future machines such as the FCC-ee and a muon collider. Much of my work is on jets and jet substructure, machine-learning methods for collider data, and the software tools these studies need.</p>
+      <!-- SHORT BIO: keep it to three or four sentences -->
+      <p class="lead">I work with large, noisy datasets, statistics and code. For eight years I have built Monte Carlo simulations, machine-learning classifiers and analysis pipelines in C++ and Python for particle-physics research, and I ran a 440-core HPC cluster for a university department. I also wrote <a href="projects.html#dynamicr">DynamicR</a>, an open-source package that is now part of FastJet Contrib.</p>
 
-      <p>I did my PhD at the Tata Institute of Fundamental Research (TIFR), Mumbai. Since then I have been a postdoctoral fellow at the Harish-Chandra Research Institute (HRI), Prayagraj, at IISER Kolkata and, since 2024, at IMSc Chennai. I wrote <a href="research.html#software">DynamicR</a>, the FastJet Contrib package for the Dynamic Radius jet algorithm.</p>
+      <!-- LONG BIO: hidden until the visitor clicks -->
+      <details class="bio">
+        <summary>More about me</summary>
+        <p>I am from West Bengal. I studied physics at Ramakrishna Mission Residential College, Narendrapur (University of Calcutta), and at IIT Kanpur. I did my PhD at the Tata Institute of Fundamental Research (TIFR), Mumbai, on signals of extra dimensions at particle colliders. For that work I wrote my first Monte Carlo event generator from scratch.</p>
+        <p>Since 2018 I have been a postdoctoral fellow at HRI Prayagraj, IISER Kolkata and, since 2024, IMSc Chennai. My research is on collider phenomenology: jets and jet substructure, physics beyond the Standard Model, and new analysis methods for the LHC and future colliders. Most of this work is a data problem at heart: simulate millions of events, design good features, separate a rare signal from a large background, and check with statistics that the result is real. I have published 18 peer-reviewed papers (10 as corresponding author) and given about 40 talks, including an invited talk to the CMS B2G group at CERN.</p>
+        <p>Alongside research I have always looked after computing. At IISER Kolkata I ran the department's HPC cluster and designed its website and live job dashboard, and earlier I built a similar status page for the HRI cluster. I enjoy teaching too: I have lectured on data analysis with ROOT, on quantum field theory, and on group theory.</p>
+        <p>I am now looking for my next role, and I am happy to move into a new field. Data science, machine learning, quantitative research and HPC or research software engineering all use the same skills I use every day. I am open to positions in India or abroad, in industry or in academia.</p>
+      </details>
 
-      <ul class="links">
-        <li><a class="main" href="TousikSamui_CV.pdf">CV (PDF)</a></li>
-        <li><a href="https://inspirehep.net/authors/1413674">INSPIRE</a></li>
-        <li><a href="https://scholar.google.com/citations?user=7_l0Ty4AAAAJ">Google Scholar</a></li>
-        <li><a href="https://arxiv.org/a/samui_t_1.html">arXiv</a></li>
-        <li><a href="https://orcid.org/0000-0002-1485-6155">ORCID</a></li>
-        <li><a href="https://github.com/tousiksamui">GitHub</a></li>
-        <li><a href="https://www.linkedin.com/in/tousik-samui-a9b82918">LinkedIn</a></li>
-      </ul>
+      <div class="open-to">Open to new roles in data science, ML, quant research and HPC / research software</div>
+
+      <div class="btn-row">
+        <a class="btn primary" href="TousikSamui_CV.pdf">CV (PDF)</a>
+        <a class="btn" href="TousikSamui_CV_academic.pdf">Academic CV</a>
+        <a class="btn" href="https://www.linkedin.com/in/tousik-samui-a9b82918">LinkedIn</a>
+        <a class="btn" href="https://github.com/tousiksamui">GitHub</a>
+        <a class="btn" href="https://scholar.google.com/citations?user=7_l0Ty4AAAAJ">Google Scholar</a>
+        <a class="btn" href="https://inspirehep.net/authors/1413674">INSPIRE</a>
+        <a class="btn" href="#contact">Contact</a>
+      </div>
     </div>
   </section>
-
-  <!-- ============ RESEARCH INTERESTS ============ -->
-  <h2>Research interests</h2>
-  <ul class="tags">
-    <li>Jets and jet substructure</li>
-    <li>Collider phenomenology (LHC, HL-LHC, FCC-ee, muon collider)</li>
-    <li>Physics beyond the Standard Model</li>
-    <li>Dark matter and neutrino physics</li>
-    <li>Machine learning for collider data</li>
-    <li>Monte Carlo tools and research software</li>
-  </ul>
-
-  <!-- ============ NEWS: add new items at the TOP, remove old ones ============ -->
-  <h2>News</h2>
-  <ul class="dated">
-    <li><span class="when">Sep 2026</span>
-        <span>New preprint: <a href="https://arxiv.org/abs/2609.29862">Generalised Dynamic Radius Jets for Robust Collider Analyses</a>.</span></li>
-    <li><span class="when">Jul 2026</span>
-        <span>DynamicR is released as an official package in <a href="https://fastjet.fr/contrib/">FastJet Contrib</a> (v1.104).</span></li>
-    <li><span class="when">Apr 2026</span>
-        <span>Invited talk on Dynamic Radius jets at the CMS B2G group meeting.</span></li>
-    <li><span class="when">2026</span>
-        <span>Papers in Phys. Rev. D on <a href="https://doi.org/10.1103/dhs6-gcn9">vector-like top partner searches with jet substructure</a> and on <a href="https://doi.org/10.1103/jbq9-jy42">doubly charged scalars at a muon collider</a>, and in Phys. Lett. B on <a href="https://doi.org/10.1016/j.physletb.2025.140048">lepton flavour violation at electron&ndash;proton colliders</a>.</span></li>
-    <li><span class="when">Jun&ndash;Jul 2025</span>
-        <span>Visit to the CERN Theoretical Physics Department and the Les Houches workshop <i>Physics at TeV Colliders</i>.</span></li>
-  </ul>
-
-  <!-- ============ CONTACT ============ -->
-  <h2>Contact</h2>
-  <p>
-    The Institute of Mathematical Sciences (IMSc)<br>
-    IV Cross Road, CIT Campus, Taramani<br>
-    Chennai 600 113, Tamil Nadu, India
-  </p>
-  <p>Email: tousiksamui [at] gmail [dot] com &nbsp;&middot;&nbsp; tousiks [at] imsc [dot] res [dot] in</p>
-
 </div>
+
+<!-- ================= WHAT I DO ================= -->
+<section class="block alt">
+  <div class="wrap">
+    <h2>What I do</h2>
+    <div class="cards">
+      <div class="card">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 20V11M10 20V5M16 20v-8M21 20H3"/></svg></div>
+        <h3>Data analysis and machine learning</h3>
+        <p>Finding small, real effects in large, noisy data: feature engineering, classification (boosted decision trees and other multivariate methods), likelihood-based statistics, hypothesis testing and unfolding.</p>
+        <ul class="tags"><li>Python</li><li>NumPy / pandas</li><li>scikit-learn</li><li>XGBoost</li><li>Statistical modelling</li><li>Hypothesis testing</li></ul>
+      </div>
+      <div class="card">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="4" width="18" height="6" rx="1.5"/><rect x="3" y="14" width="18" height="6" rx="1.5"/><path d="M7 7h.01M7 17h.01"/></svg></div>
+        <h3>Scientific software and HPC</h3>
+        <p>Fast, tested C++ and Python; reproducible pipelines for terabyte-scale simulations; and running a shared 440-core HPC cluster with its users, software and scheduler.</p>
+        <ul class="tags"><li>C++</li><li>Python</li><li>Bash</li><li>Linux</li><li>PBS / Slurm</li><li>Git</li><li>PHP / JavaScript</li></ul>
+      </div>
+      <div class="card">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="1.6" fill="currentColor"/><ellipse cx="12" cy="12" rx="10" ry="4"/><ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(60 12 12)"/><ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(120 12 12)"/></svg></div>
+        <h3>Particle-physics research</h3>
+        <p>Collider phenomenology: jets and jet substructure, physics beyond the Standard Model, and new methods for the LHC and future colliders such as the FCC-ee and a muon collider.</p>
+        <ul class="tags"><li>Jet substructure</li><li>Monte Carlo simulation</li><li>LHC / CMS Open Data</li><li>Model building</li></ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= NUMBERS ================= -->
+<section class="block">
+  <div class="wrap">
+    <h2>At a glance</h2>
+    <div class="stats">
+      <div class="stat"><div class="value">18</div><div class="label">peer-reviewed papers</div></div>
+      <div class="stat"><div class="value">10</div><div class="label">as corresponding author</div></div>
+      <div class="stat"><div class="value">40</div><div class="label">talks and seminars</div></div>
+      <div class="stat"><div class="value">440</div><div class="label">CPU cores in the HPC cluster I ran</div></div>
+      <div class="stat"><div class="value">8 yrs</div><div class="label">postdoctoral research</div></div>
+      <div class="stat"><div class="value">AIR 3</div><div class="label">CSIR-NET, Physical Sciences</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FEATURED PROJECTS ================= -->
+<section class="block alt">
+  <div class="wrap">
+    <div class="section-head"><h2>Featured projects</h2><a class="more" href="projects.html">All projects</a></div>
+    <div class="cards">
+      <div class="card">
+        <a href="projects.html#kepler"><img class="shot" src="images/kepler_dashboard.png" alt="Kepler cluster live status page designed by Tousik Samui"></a>
+        <h3>Kepler HPC cluster and live dashboard</h3>
+        <p>Ran the IISER Kolkata physics cluster (11 compute nodes, 440 CPU cores, a GPU node) and designed its website and live job dashboard. The dashboard is still in daily use.</p>
+        <ul class="tags"><li>Linux</li><li>PBS</li><li>PHP</li><li>JavaScript / jQuery</li><li>HTML / CSS</li></ul>
+        <div class="links"><a href="projects.html#kepler">Details</a> &middot; <a href="https://www.iiserkol.ac.in/~dps.hpc/clusterStatus">Live page</a></div>
+      </div>
+      <div class="card">
+        <h3>DynamicR: open-source C++ package</h3>
+        <p>The official implementation of the Dynamic Radius jet algorithm, a clustering method in which each cluster's size adapts to the local data. Released in FastJet Contrib, the standard add-on library for jet clustering, with documentation, an example and a regression test.</p>
+        <ul class="tags"><li>C++</li><li>Algorithm design</li><li>Open source</li><li>Testing</li></ul>
+        <div class="links"><a href="https://github.com/tousiksamui/DynamicRJetAlgorithm">GitHub</a> &middot; <a href="https://fastjet.fr/contrib/">FastJet Contrib</a> &middot; <a href="https://doi.org/10.1007/JHEP04(2023)019">Paper</a></div>
+      </div>
+      <div class="card">
+        <h3>Collider data analysis with CMS Open Data</h3>
+        <p>Applied the Dynamic Radius method to public CMS Open Data in a search for new heavy particles, and showed a clear gain in sensitivity. The CMS B2G group invited me to present the method in 2026.</p>
+        <ul class="tags"><li>Open data</li><li>Python / C++</li><li>ROOT</li><li>Statistics</li></ul>
+        <div class="links"><a href="https://doi.org/10.1103/dhs6-gcn9">Phys. Rev. D (2026)</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= JOURNEY ================= -->
+<section class="block">
+  <div class="wrap">
+    <h2>My journey</h2>
+    <ol class="journey">
+      <li><div class="years">2007&ndash;2010</div>
+        <div><h3>B.Sc. (Hons) Physics</h3><p>RKM Residential College, Narendrapur (University of Calcutta). DST INSPIRE scholar.</p></div></li>
+      <li><div class="years">2010&ndash;2012</div>
+        <div><h3>M.Sc. Physics, IIT Kanpur</h3><p>Joined with All India Rank 5 in JAM. Academic Excellence Award.</p></div></li>
+      <li><div class="years">2012&ndash;2019</div>
+        <div><h3>PhD, TIFR Mumbai</h3><p>Signals of extra dimensions at colliders; wrote my first Monte Carlo event generator. All India Rank 3 in CSIR-NET and 15 in GATE Mathematics (2013).</p></div></li>
+      <li><div class="years">2018&ndash;2021</div>
+        <div><h3>Postdoc, HRI Prayagraj</h3><p>Jet substructure and machine-learning classifiers; built a live job-status page for the institute's HPC cluster.</p></div></li>
+      <li><div class="years">2021&ndash;2024</div>
+        <div><h3>Postdoc, IISER Kolkata</h3><p>Co-invented the Dynamic Radius jet algorithm; ran the department's Kepler HPC cluster; Secretary of the MODE collaboration.</p></div></li>
+      <li class="now"><div class="years">2024&ndash;now</div>
+        <div><h3>Postdoc, IMSc Chennai</h3><p>Analysis of CMS Open Data; DynamicR released in FastJet Contrib; research visit to CERN; invited talk to the CMS B2G group.</p></div></li>
+      <li class="next"><div class="years">Next</div>
+        <div><h3>A new challenge</h3><p>Looking for a role where data, statistics and computing matter, in industry or in academia.</p></div></li>
+    </ol>
+  </div>
+</section>
+
+<!-- ================= PUBLICATIONS ================= -->
+<section class="block alt">
+  <div class="wrap">
+    <div class="section-head"><h2>Selected publications</h2><a class="more" href="pub.html">All 18 papers and preprints</a></div>
+    <div class="two-col">
+      <ol class="pubs">
+        <li><span class="title">Dynamic Radius Jet Clustering Algorithm</span>
+            <span class="venue">B. Mukhopadhyaya, <span class="me">T. Samui*</span>, R. K. Singh &middot; <a href="https://doi.org/10.1007/JHEP04(2023)019">JHEP 04 (2023) 019</a></span></li>
+        <li><span class="title">Improving Sensitivity of Vectorlike Top Partner Searches with Jet Substructure</span>
+            <span class="venue">A. Ghosh, S. Ghosh, S. Mitra, <span class="me">T. Samui*</span>, R. K. Singh &middot; <a href="https://doi.org/10.1103/dhs6-gcn9">Phys. Rev. D 113 (2026) 035034</a></span></li>
+        <li><span class="title">Polarization study of a boosted W boson decaying hadronically at the LHC with jet substructures and a multivariate analysis</span>
+            <span class="venue">A. Dey, <span class="me">T. Samui*</span> &middot; <a href="https://doi.org/10.1140/epjc/s10052-023-12118-1">Eur. Phys. J. C 83 (2023) 1002</a></span></li>
+        <li><span class="title">Improving Heavy Dijet Resonance Searches Using Jet Substructure at the LHC</span>
+            <span class="venue">A. K. Nayak, S. K. Rai, <span class="me">T. Samui*</span> &middot; <a href="https://doi.org/10.1140/epjc/s10052-021-08856-9">Eur. Phys. J. C 81 (2021) 130</a></span></li>
+      </ol>
+      <div>
+<!-- PUB-CHART START (made by make_pub_chart.py; edit the numbers there, not here) -->
+<div class="chart">
+  <h3>Peer-reviewed papers per year</h3>
+  <p class="small">18 papers in total, 10 of them as corresponding author.</p>
+  <ul class="legend">
+    <li><span class="key" style="background:var(--c-main)"></span>As corresponding author</li>
+    <li><span class="key" style="background:var(--c-other)"></span>As co-author</li>
+  </ul>
+<svg viewBox="0 0 480 240" role="img" aria-labelledby="pubchart-title">
+<title id="pubchart-title">Peer-reviewed papers per year, 2017 to 2026</title>
+<line x1="30" x2="474" y1="210.0" y2="210.0" stroke="var(--c-axis)" stroke-width="1" opacity="1"/>
+<text x="22" y="214.0" text-anchor="end" font-size="12" fill="var(--c-text)">0</text>
+<line x1="30" x2="474" y1="172.4" y2="172.4" stroke="var(--c-axis)" stroke-width="1" opacity="0.55"/>
+<text x="22" y="176.4" text-anchor="end" font-size="12" fill="var(--c-text)">1</text>
+<line x1="30" x2="474" y1="134.8" y2="134.8" stroke="var(--c-axis)" stroke-width="1" opacity="0.55"/>
+<text x="22" y="138.8" text-anchor="end" font-size="12" fill="var(--c-text)">2</text>
+<line x1="30" x2="474" y1="97.2" y2="97.2" stroke="var(--c-axis)" stroke-width="1" opacity="0.55"/>
+<text x="22" y="101.2" text-anchor="end" font-size="12" fill="var(--c-text)">3</text>
+<line x1="30" x2="474" y1="59.6" y2="59.6" stroke="var(--c-axis)" stroke-width="1" opacity="0.55"/>
+<text x="22" y="63.6" text-anchor="end" font-size="12" fill="var(--c-text)">4</text>
+<line x1="30" x2="474" y1="22.0" y2="22.0" stroke="var(--c-axis)" stroke-width="1" opacity="0.55"/>
+<text x="22" y="26.0" text-anchor="end" font-size="12" fill="var(--c-text)">5</text>
+<g class="year" tabindex="0"><title>2017: 1 paper (1 as corresponding author, 0 as co-author)</title>
+<rect x="30.0" y="22" width="44.4" height="188" fill="transparent"/>
+<path class="bar" fill="var(--c-main)" d="M40.2,210.0 V176.4 Q40.2,172.4 44.2,172.4 H60.2 Q64.2,172.4 64.2,176.4 V210.0 Z"/>
+<text x="52.2" y="166.4" text-anchor="middle" font-size="13" font-weight="600" fill="var(--ink)">1</text>
+<text x="52.2" y="230" text-anchor="middle" font-size="12" fill="var(--c-text)">2017</text>
+</g>
+<g class="year" tabindex="0"><title>2018: 0 papers</title>
+<rect x="74.4" y="22" width="44.4" height="188" fill="transparent"/>
+<text x="96.6" y="230" text-anchor="middle" font-size="12" fill="var(--c-text)">2018</text>
+</g>
+<g class="year" tabindex="0"><title>2019: 1 paper (0 as corresponding author, 1 as co-author)</title>
+<rect x="118.8" y="22" width="44.4" height="188" fill="transparent"/>
+<path class="bar" fill="var(--c-other)" d="M129.0,210.0 V176.4 Q129.0,172.4 133.0,172.4 H149.0 Q153.0,172.4 153.0,176.4 V210.0 Z"/>
+<text x="141.0" y="166.4" text-anchor="middle" font-size="13" font-weight="600" fill="var(--ink)">1</text>
+<text x="141.0" y="230" text-anchor="middle" font-size="12" fill="var(--c-text)">2019</text>
+</g>
+<g class="year" tabindex="0"><title>2020: 0 papers</title>
+<rect x="163.2" y="22" width="44.4" height="188" fill="transparent"/>
+<text x="185.4" y="230" text-anchor="middle" font-size="12" fill="var(--c-text)">2020</text>
+</g>
+<g class="year" tabindex="0"><title>2021: 3 papers (2 as corresponding author, 1 as co-author)</title>
+<rect x="207.6" y="22" width="44.4" height="188" fill="transparent"/>
+<rect class="bar" x="217.8" y="134.8" width="24.0" height="75.2" fill="var(--c-main)"/>
+<path class="bar" fill="var(--c-other)" d="M217.8,132.8 V101.2 Q217.8,97.2 221.8,97.2 H237.8 Q241.8,97.2 241.8,101.2 V132.8 Z"/>
+<text x="229.8" y="91.2" text-anchor="middle" font-size="13" font-weight="600" fill="var(--ink)">3</text>
+<text x="229.8" y="230" text-anchor="middle" font-size="12" fill="var(--c-text)">2021</text>
+</g>
+<g class="year" tabindex="0"><title>2022: 0 papers</title>
+<rect x="252.0" y="22" width="44.4" height="188" fill="transparent"/>
+<text x="274.2" y="230" text-anchor="middle" font-size="12" fill="var(--c-text)">2022</text>
+</g>
+<g class="year" tabindex="0"><title>2023: 5 papers (3 as corresponding author, 2 as co-author)</title>
+<rect x="296.4" y="22" width="44.4" height="188" fill="transparent"/>
+<rect class="bar" x="306.6" y="97.2" width="24.0" height="112.8" fill="var(--c-main)"/>
+<path class="bar" fill="var(--c-other)" d="M306.6,95.2 V26.0 Q306.6,22.0 310.6,22.0 H326.6 Q330.6,22.0 330.6,26.0 V95.2 Z"/>
+<text x="318.6" y="16.0" text-anchor="middle" font-size="13" font-weight="600" fill="var(--ink)">5</text>
+<text x="318.6" y="230" text-anchor="middle" font-size="12" fill="var(--c-text)">2023</text>
+</g>
+<g class="year" tabindex="0"><title>2024: 3 papers (1 as corresponding author, 2 as co-author)</title>
+<rect x="340.8" y="22" width="44.4" height="188" fill="transparent"/>
+<rect class="bar" x="351.0" y="172.4" width="24.0" height="37.6" fill="var(--c-main)"/>
+<path class="bar" fill="var(--c-other)" d="M351.0,170.4 V101.2 Q351.0,97.2 355.0,97.2 H371.0 Q375.0,97.2 375.0,101.2 V170.4 Z"/>
+<text x="363.0" y="91.2" text-anchor="middle" font-size="13" font-weight="600" fill="var(--ink)">3</text>
+<text x="363.0" y="230" text-anchor="middle" font-size="12" fill="var(--c-text)">2024</text>
+</g>
+<g class="year" tabindex="0"><title>2025: 2 papers (1 as corresponding author, 1 as co-author)</title>
+<rect x="385.2" y="22" width="44.4" height="188" fill="transparent"/>
+<rect class="bar" x="395.4" y="172.4" width="24.0" height="37.6" fill="var(--c-main)"/>
+<path class="bar" fill="var(--c-other)" d="M395.4,170.4 V138.8 Q395.4,134.8 399.4,134.8 H415.4 Q419.4,134.8 419.4,138.8 V170.4 Z"/>
+<text x="407.4" y="128.8" text-anchor="middle" font-size="13" font-weight="600" fill="var(--ink)">2</text>
+<text x="407.4" y="230" text-anchor="middle" font-size="12" fill="var(--c-text)">2025</text>
+</g>
+<g class="year" tabindex="0"><title>2026: 3 papers (2 as corresponding author, 1 as co-author)</title>
+<rect x="429.6" y="22" width="44.4" height="188" fill="transparent"/>
+<rect class="bar" x="439.8" y="134.8" width="24.0" height="75.2" fill="var(--c-main)"/>
+<path class="bar" fill="var(--c-other)" d="M439.8,132.8 V101.2 Q439.8,97.2 443.8,97.2 H459.8 Q463.8,97.2 463.8,101.2 V132.8 Z"/>
+<text x="451.8" y="91.2" text-anchor="middle" font-size="13" font-weight="600" fill="var(--ink)">3</text>
+<text x="451.8" y="230" text-anchor="middle" font-size="12" fill="var(--c-text)">2026</text>
+</g>
+</svg>
+  <details class="full"><summary>Show as a table</summary>
+    <table><tr><th>Year</th><th>Corresponding author</th><th>Co-author</th><th>Total</th></tr>
+<tr><td>2017</td><td>1</td><td>0</td><td>1</td></tr>
+<tr><td>2019</td><td>0</td><td>1</td><td>1</td></tr>
+<tr><td>2021</td><td>2</td><td>1</td><td>3</td></tr>
+<tr><td>2023</td><td>3</td><td>2</td><td>5</td></tr>
+<tr><td>2024</td><td>1</td><td>2</td><td>3</td></tr>
+<tr><td>2025</td><td>1</td><td>1</td><td>2</td></tr>
+<tr><td>2026</td><td>2</td><td>1</td><td>3</td></tr>
+    </table>
+  </details>
+</div>
+<!-- PUB-CHART END -->
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= TALKS + TEACHING ================= -->
+<section class="block">
+  <div class="wrap two-col">
+    <div>
+      <div class="section-head"><h2>Selected talks</h2><a class="more" href="activities.html#talks">All 40 talks</a></div>
+      <ul class="dated">
+        <li><span class="when">Apr 2026</span><span><b>Enhancing collider investigations with Dynamic Radius jets</b>, CMS B2G group meeting (invited, online)</span></li>
+        <li><span class="when">Feb 2026</span><span><b>Jets and jet substructure adventures at high energy colliders</b>, seminar, IISER Mohali</span></li>
+        <li><span class="when">Jun 2025</span><span><b>Prospects of the Dynamic Radius jet algorithm at the LHC</b>, led discussion, Les Houches workshop, France</span></li>
+        <li><span class="when">Jun 2024</span><span><b>Polarization study of a boosted, hadronic W boson</b>, ATLAS L2IT physics analysis meeting (online)</span></li>
+      </ul>
+    </div>
+    <div>
+      <div class="section-head"><h2>Teaching</h2><a class="more" href="activities.html#teaching">All teaching</a></div>
+      <ul class="dated">
+        <li><span class="when">May 2025</span><span><b>Data handling using ROOT</b>, lectures at the ML4HEP school, IISER Kolkata</span></li>
+        <li><span class="when">2024</span><span><b>Introduction and quantization of fields</b>, online lectures at the PWF Bangladesh school on QFT, organised with ICTP</span></li>
+        <li><span class="when">2022</span><span><b>Linear representations of groups</b>, <a href="https://www.youtube.com/playlist?list=PLMk7cuBPfZ3NR1Jp8YvgV5lFjJW-xEryy">lecture series on YouTube</a></span></li>
+        <li><span class="when">2013&ndash;2022</span><span>Teaching assistant for four university courses (TIFR, IISER Kolkata)</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ================= AWARDS + NEWS ================= -->
+<section class="block alt">
+  <div class="wrap two-col">
+    <div>
+      <div class="section-head"><h2>Awards and achievements</h2><a class="more" href="activities.html#awards">All awards</a></div>
+      <ul class="dated">
+        <li><span class="when">2023</span><span>Best Poster, DPS Day, IISER Kolkata</span></li>
+        <li><span class="when">2013</span><span>All India Rank <b>3</b>, CSIR-NET in Physical Sciences</span></li>
+        <li><span class="when">2013</span><span>All India Rank <b>15</b>, GATE in Mathematics</span></li>
+        <li><span class="when">2011</span><span>Academic Excellence Award, M.Sc. Physics, IIT Kanpur</span></li>
+        <li><span class="when">2010</span><span>All India Rank <b>5</b>, JAM in Physics</span></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Latest news</h2>
+      <!-- Add new items at the TOP; keep about four. -->
+      <ul class="dated">
+        <li><span class="when">Sep 2026</span><span>New preprint: <a href="https://arxiv.org/abs/2609.29862">Generalised Dynamic Radius Jets for Robust Collider Analyses</a></span></li>
+        <li><span class="when">Jul 2026</span><span>DynamicR released in <a href="https://fastjet.fr/contrib/">FastJet Contrib</a> (v1.104)</span></li>
+        <li><span class="when">Apr 2026</span><span>Invited talk at the CMS B2G group meeting</span></li>
+        <li><span class="when">Jun&ndash;Jul 2025</span><span>Research visit to the CERN Theoretical Physics Department</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section class="block" id="contact">
+  <div class="wrap">
+    <h2>Contact</h2>
+    <p>Email: tousiksamui [at] gmail [dot] com &nbsp;&middot;&nbsp; tousiks [at] imsc [dot] res [dot] in</p>
+    <p class="muted">The Institute of Mathematical Sciences (IMSc), IV Cross Road, CIT Campus, Taramani, Chennai 600 113, India</p>
+  </div>
+</section>
+
 </main>
 
-<!-- ============ FOOTER (same on every page; change the date when you update) ============ -->
+<!-- ================= FOOTER (same on every page; change the date when you update) ================= -->
 <footer class="site">
-  <div class="wrap">Last updated: October 2026</div>
+  <div class="wrap"><span>&copy; Tousik Samui</span><span>Last updated: October 2026</span></div>
 </footer>
 
 </body>

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projects | Tousik Samui</title>
+  <meta name="description" content="Software, HPC and data projects by Tousik Samui: Kepler HPC cluster and live dashboard, DynamicR (C++), analysis of CMS Open Data, machine learning and statistics.">
+  <link rel="icon" href="images/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* layout used only on this page */
+    .project { display: grid; grid-template-columns: 1.1fr 1fr; gap: 26px; align-items: start; }
+    .project.single { grid-template-columns: 1fr; }
+    .project ul { padding-left: 1.2em; margin: 6px 0 10px; }
+    .project li { margin-bottom: 4px; }
+    .project ul.tags { padding-left: 0; margin: 0; }
+    .facts { display: grid; grid-template-columns: repeat(auto-fit, minmax(105px, 1fr)); gap: 10px; margin: 12px 0; }
+    .facts div { border: 1px solid var(--line); border-radius: 8px; padding: 8px 10px; background: var(--card); }
+    .facts b { display: block; font-size: 1.25rem; }
+    .facts span { font-size: 0.82rem; color: var(--muted); }
+    figure { margin: 0; }
+    figcaption { font-size: 0.85rem; color: var(--muted); margin-top: 6px; }
+    @media (max-width: 820px) { .project { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <a class="name" href="index.html">Tousik Samui</a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a class="current" href="projects.html">Projects</a>
+      <a href="research.html">Research</a>
+      <a href="pub.html">Publications</a>
+      <a href="activities.html">Talks &amp; Teaching</a>
+      <a href="TousikSamui_CV.pdf">CV</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<div class="wrap page-title">
+  <h1>Projects</h1>
+  <p>Software, HPC and data projects from my research and service work. Each one lists the tools I used.</p>
+  <ul class="toc">
+    <li><a class="btn" href="#kepler">Kepler HPC cluster</a></li>
+    <li><a class="btn" href="#dynamicr">DynamicR</a></li>
+    <li><a class="btn" href="#cms">CMS Open Data</a></li>
+    <li><a class="btn" href="#ml">Machine learning and statistics</a></li>
+    <li><a class="btn" href="#more">More</a></li>
+  </ul>
+</div>
+
+<!-- ================= KEPLER ================= -->
+<section class="block" id="kepler">
+  <div class="wrap">
+    <h2>Kepler HPC cluster: administration and live dashboard</h2>
+    <p class="muted">IISER Kolkata, Department of Physical Sciences &middot; System Administrator and Maintenance Coordinator, Apr 2023 &ndash; May 2024 (alongside my postdoc)</p>
+    <div class="project">
+      <div>
+        <div class="facts">
+          <div><b>11</b><span>compute nodes (incl. 1 GPU node)</span></div>
+          <div><b>440</b><span>CPU cores</span></div>
+          <div><b>~2 TB</b><span>total memory</span></div>
+          <div><b>PBS</b><span>batch scheduler, AlmaLinux</span></div>
+        </div>
+        <p>Kepler is the shared computing cluster of the physics department. It is used by many research groups, from master's students to faculty.</p>
+        <p><b>What I did</b></p>
+        <ul>
+          <li>Ran the cluster day to day: user accounts, queues and job scheduling, software installation, network administration and resource planning.</li>
+          <li>Was the first point of contact for users: fixed failed jobs, build errors and missing libraries, and turned common problems into short guides.</li>
+          <li>Designed and built the cluster website from scratch: home page, usage guide, contacts, and an <i>Outputs</i> page with a form to record papers that used the cluster.</li>
+          <li>Built the live <b>Running Status</b> dashboard. It shows node states, free CPUs per node and queue, jobs per user with run time and CPU-efficiency figures (CPU time divided by run time &times; cores), and a storage-usage report. Tables can be sorted and are organised in tabs.</li>
+          <li>Presented the facility to all users at DPS Days 2024.</li>
+        </ul>
+        <p><b>Result:</b> users can see at a glance where to submit jobs, and the administrators can spot idle or inefficient jobs quickly. The dashboard is still running in 2026.</p>
+        <ul class="tags"><li>Linux (AlmaLinux)</li><li>PBS</li><li>Bash</li><li>PHP</li><li>JavaScript / jQuery</li><li>HTML / CSS</li><li>Monitoring</li><li>User support</li></ul>
+        <p class="links" style="margin-top:12px"><a class="btn primary" href="https://www.iiserkol.ac.in/~dps.hpc/clusterStatus">Open the live dashboard</a> <a class="btn" href="https://www.iiserkol.ac.in/~dps.hpc/">Cluster website</a></p>
+      </div>
+      <figure>
+        <img class="shot" src="images/kepler_dashboard.png" alt="The Running Status page of the Kepler cluster: header, menu on the left, and a summary table of node states" style="border-radius:8px;border:1px solid var(--line)">
+        <figcaption>The <i>Running Status</i> page I designed (summary view; user-level tables not shown here). Whole site designed, built and maintained by me.</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ================= HRI ================= -->
+<section class="block alt">
+  <div class="wrap">
+    <h2>HRI cluster status page</h2>
+    <p class="muted">Harish-Chandra Research Institute, Prayagraj &middot; Jan 2020 &ndash; Nov 2021</p>
+    <p>My first cluster dashboard: a web page that showed the live status of running jobs on the HRI HPC facility, so that users could choose where to submit without asking the administrator. The Kepler dashboard grew out of this work.</p>
+    <ul class="tags"><li>PHP</li><li>HTML / CSS</li><li>Linux</li><li>Batch systems</li></ul>
+  </div>
+</section>
+
+<!-- ================= DYNAMICR ================= -->
+<section class="block" id="dynamicr">
+  <div class="wrap">
+    <h2>DynamicR: open-source C++ package</h2>
+    <p class="muted">IISER Kolkata and IMSc &middot; paper 2023, release in FastJet Contrib v1.104 (2026)</p>
+    <div class="project single">
+      <div>
+        <p>Jet algorithms group thousands of particles in a collision into a few objects ("jets"). Standard algorithms use one fixed size for every jet. With colleagues I proposed the <b>Dynamic Radius</b> algorithm, in which the size of each cluster follows the local data, so one algorithm can capture both narrow and wide jets.</p>
+        <ul>
+          <li>Wrote the official C++ implementation as a plugin for FastJet, the standard jet-clustering library in particle physics.</li>
+          <li>Prepared it for public release with documentation, a worked example and a regression test, and got it accepted into FastJet Contrib.</li>
+          <li>Wrote a Python tool that animates each clustering step as a video, for talks, teaching and debugging.</li>
+          <li>Generalised the method for more robust analyses (preprint, 2026).</li>
+        </ul>
+        <ul class="tags"><li>C++</li><li>Algorithm design</li><li>Open-source release</li><li>Regression testing</li><li>Python (visualisation)</li></ul>
+        <p class="links" style="margin-top:12px"><a class="btn primary" href="https://github.com/tousiksamui/DynamicRJetAlgorithm">Code on GitHub</a> <a class="btn" href="https://fastjet.fr/contrib/">FastJet Contrib</a> <a class="btn" href="https://doi.org/10.1007/JHEP04(2023)019">Paper (JHEP 2023)</a> <a class="btn" href="https://arxiv.org/abs/2609.29862">Generalisation (2026)</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CMS OPEN DATA ================= -->
+<section class="block alt" id="cms">
+  <div class="wrap">
+    <h2>Collider data analysis with CMS Open Data</h2>
+    <p class="muted">IMSc and IISER Kolkata &middot; Phys. Rev. D 113 (2026) 035034</p>
+    <p>In this project we applied the Dynamic Radius method to <b>CMS Open Data</b>, the public data sets released by the CMS experiment at CERN, in a search for vector-like top partners (hypothetical heavy particles). The new jet features gave a clear gain in sensitivity over standard methods. The CMS B2G (boosted objects) group invited me to present the work in 2026, to explore its use in CMS analyses.</p>
+    <ul class="tags"><li>Open data</li><li>Python</li><li>C++</li><li>ROOT</li><li>Feature engineering</li><li>Statistical significance</li></ul>
+    <p class="links" style="margin-top:12px"><a class="btn" href="https://doi.org/10.1103/dhs6-gcn9">Paper</a></p>
+  </div>
+</section>
+
+<!-- ================= ML AND STATISTICS ================= -->
+<section class="block" id="ml">
+  <div class="wrap">
+    <h2>Machine learning and statistics on large simulated datasets</h2>
+    <div class="cards two">
+      <div class="card">
+        <h3>Classifying rare signals</h3>
+        <p>Multivariate classifiers (boosted decision trees) built on high-dimensional jet features to separate the polarisation states of boosted W bosons, judged with ROC curves and significance.</p>
+        <div class="links"><a href="https://doi.org/10.1140/epjc/s10052-023-12118-1">Eur. Phys. J. C (2023)</a></div>
+        <ul class="tags"><li>Classification</li><li>BDT / MVA</li><li>ROC analysis</li></ul>
+      </div>
+      <div class="card">
+        <h3>Quark or gluon?</h3>
+        <p>Used jet-substructure features to tell which type of new heavy particle produced a pair of jets, improving searches for dijet resonances at the LHC.</p>
+        <div class="links"><a href="https://doi.org/10.1140/epjc/s10052-021-08856-9">Eur. Phys. J. C (2021)</a></div>
+        <ul class="tags"><li>Feature engineering</li><li>Hypothesis testing</li></ul>
+      </div>
+      <div class="card">
+        <h3>Correcting measurement bias (unfolding)</h3>
+        <p>An unfolding method to recover true distributions of quantum-entanglement observables from distorted detector-level data: an inverse problem with real uncertainties.</p>
+        <div class="links"><a href="https://arxiv.org/abs/2512.09121">arXiv:2512.09121</a></div>
+        <ul class="tags"><li>Inverse problems</li><li>Uncertainty</li><li>Statistics</li></ul>
+      </div>
+      <div class="card">
+        <h3>Self-organising maps</h3>
+        <p>Unsupervised self-organising maps to search for a rare process at the LHC (work presented at the ML4HEP programme, ICTS Bengaluru, 2023).</p>
+        <ul class="tags"><li>Unsupervised learning</li><li>Clustering</li></ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= MORE ================= -->
+<section class="block alt" id="more">
+  <div class="wrap">
+    <h2>More software</h2>
+    <ul class="dated">
+      <li><span class="when">PhD</span><span><b>Monte Carlo event generator</b> for a near-continuous spectrum of new particle states that standard tools could not handle.</span></li>
+      <li><span class="when">2026</span><span><b>Monte Carlo generator for FCC-ee</b> with lepton and photon distribution functions (<a href="https://arxiv.org/abs/2603.27822">arXiv:2603.27822</a>).</span></li>
+      <li><span class="when">Ongoing</span><span><b>Pythia8 extension</b> (C++): modified colour connections for heavy, long-lived coloured particles.</span></li>
+      <li><span class="when">2018&ndash;now</span><span><b>Reproducible pipelines</b> in C++, Python and Bash that run large simulation campaigns on HPC clusters (terabytes of data).</span></li>
+    </ul>
+  </div>
+</section>
+
+</main>
+
+<footer class="site">
+  <div class="wrap"><span>&copy; Tousik Samui</span><span>Last updated: October 2026</span></div>
+</footer>
+
+</body>
+</html>
